@@ -4,9 +4,23 @@
 
 [node name="Tutorial" type="CanvasLayer" unique_id=1439467086 groups=["Tutorial"]]
 script = ExtResource("1_ymgc8")
+hints = Dictionary[int, String]({
+1: "[color=midnight_blue]Click[/color] the [color=darkred]enemies[/color][br]Do not let them reach your [color=orange]castle[/color]",
+2: "The more you [color=midnight_blue]click[/color][br]The smaller the [color=darkred]attack radius[/color]",
+5: "Some [color=darkred]enemies[/color] are [color=green]linked[/color][br]To defeat them, [color=midnight_blue]click[/color][br]On both [color=darkred]enemies[/color] in the [color=green]link[/color]",
+6: "[color=gold]Butterflies[/color] will [color=lime_green]heal[/color] you[br][color=darkred]Do not[/color] [color=midnight_blue]click[/color] on them",
+10: "[color=orange]Links[/color] can be strong, but [color=darkred]onesided[/color][br]Defeat all weaker [color=darkred]enemies[/color][br]Before dealing with strong [color=orange]one[/color]"
+})
 
-[node name="Hint" type="Label" parent="." unique_id=631719105]
-offset_right = 640.0
-offset_bottom = 128.0
+[node name="Hint" type="RichTextLabel" parent="." unique_id=1427206229]
+offset_left = 192.0
+offset_top = 40.0
+offset_right = 448.0
+offset_bottom = 104.0
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.19607843)
+bbcode_enabled = true
+scroll_active = false
 horizontal_alignment = 1
-vertical_alignment = 1
+vertical_alignment = 2
