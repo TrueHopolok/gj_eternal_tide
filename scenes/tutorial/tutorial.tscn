@@ -13,6 +13,7 @@ hints = Dictionary[int, String]({
 })
 
 [node name="Hint" type="RichTextLabel" parent="." unique_id=1427206229]
+modulate = Color(1, 1, 1, 0)
 offset_left = 192.0
 offset_top = 40.0
 offset_right = 448.0

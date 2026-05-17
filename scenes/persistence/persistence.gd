@@ -11,6 +11,7 @@ var current_level: int = 0
 
 func _init() -> void:
 	_load()
+	current_level = best_level
 
 
 ## Loads score or set to default

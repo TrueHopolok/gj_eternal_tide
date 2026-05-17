@@ -21,6 +21,7 @@ func _show_hint(hint: String) -> void:
 	l.text = hint
 	add_child(l)
 	var t := l.create_tween().set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
-	t.tween_property(l, "position:y", -20, 3.0).as_relative()
-	t.parallel().tween_property(l, "modulate:a", 0.0, 10.0).set_ease(Tween.EASE_IN_OUT)
+	t.tween_property(l, "modulate:a", 1.0, 1.5)
+	t.parallel().tween_property(l, "position:y", -20, 1.5).as_relative()
+	t.tween_property(l, "modulate:a", 0.0, 9.0).set_ease(Tween.EASE_IN_OUT)
 	t.chain().tween_callback(l.queue_free)
