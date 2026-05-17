@@ -12,67 +12,67 @@
 [ext_resource type="PackedScene" uid="uid://dcnq8vhsh6qdn" path="res://scenes/enemy/advanced/spawner_star.tscn" id="9_mytwh"]
 
 [sub_resource type="Curve" id="Curve_qq5q4"]
-_limits = [0.0, 150.0, 0.0, 10.0]
-_data = [Vector2(0, 14.214447), 0.0, 0.0, 0, 0, Vector2(10, 150), 0.0, 0.0, 0, 0]
-point_count = 2
+_limits = [0.0, 150.0, 14.0, 50.0]
+_data = [Vector2(14, 50), 0.0, 0.0, 0, 0, Vector2(25, 100), 0.0, 0.0, 0, 0, Vector2(50, 150), 0.0, 0.0, 0, 0]
+point_count = 3
 
 [sub_resource type="Curve" id="Curve_quk26"]
-_limits = [0.0, 100.0, 0.0, 10.0]
-_data = [Vector2(0, 51.419777), 0.0, 0.0, 0, 0, Vector2(10, 4.0527344), 0.0, 0.0, 0, 0]
+_limits = [10.0, 30.0, 25.0, 50.0]
+_data = [Vector2(25, 30), 0.0, 0.0, 0, 0, Vector2(50, 10), 0.0, 0.0, 0, 0]
 point_count = 2
 
 [sub_resource type="Curve" id="Curve_gah1j"]
-_limits = [2.0, 64.0, 0.0, 10.0]
-_data = [Vector2(0, 27.840595), 0.0, 0.0, 0, 0, Vector2(10, 2), 0.0, 0.0, 0, 0]
+_limits = [2.0, 64.0, 14.0, 25.0]
+_data = [Vector2(14, 20), 0.0, 0.0, 0, 0, Vector2(25, 2), 0.0, 0.0, 0, 0]
 point_count = 2
 
 [sub_resource type="Curve" id="Curve_nlwlv"]
-_limits = [2.0, 64.0, 0.0, 10.0]
-_data = [Vector2(0, 64), 0.0, 0.0, 0, 0, Vector2(10, 30.748001), 0.0, 0.0, 0, 0]
+_limits = [2.0, 64.0, 14.0, 25.0]
+_data = [Vector2(14, 40), 0.0, 0.0, 0, 0, Vector2(25, 10), 0.0, 0.0, 0, 0]
 point_count = 2
 
 [sub_resource type="Resource" id="Resource_6gkjt"]
 script = ExtResource("1_3uyci")
 scene = ExtResource("2_ae27o")
 cost = 2
-weight = 5
+weight = 40
 metadata/_custom_type_script = "uid://cmh85gndtw1k3"
 
 [sub_resource type="Resource" id="Resource_lmrlb"]
 script = ExtResource("1_3uyci")
 scene = ExtResource("3_yx4yo")
 cost = 3
-weight = 4
+weight = 50
 metadata/_custom_type_script = "uid://cmh85gndtw1k3"
 
 [sub_resource type="Resource" id="Resource_nks25"]
 script = ExtResource("1_3uyci")
 scene = ExtResource("4_30l3i")
-cost = 6
-weight = 2
+cost = 4
+weight = 20
 metadata/_custom_type_script = "uid://cmh85gndtw1k3"
 
 [sub_resource type="Resource" id="Resource_kub5s"]
 script = ExtResource("1_3uyci")
 scene = ExtResource("5_vpnt8")
-cost = 8
+cost = 5
+weight = 20
 metadata/_custom_type_script = "uid://cmh85gndtw1k3"
 
 [sub_resource type="Resource" id="Resource_quk26"]
 script = ExtResource("1_3uyci")
 scene = ExtResource("6_505gr")
-cost = 7
 metadata/_custom_type_script = "uid://cmh85gndtw1k3"
 
 [sub_resource type="Curve" id="Curve_afgys"]
-_limits = [0.0, 8.0, 0.0, 10.0]
-_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1.8785378, 0), 0.0, 0.0, 0, 0, Vector2(10, 8), 0.0, 0.0, 0, 0]
-point_count = 3
+_limits = [0.0, 16.0, 14.0, 50.0]
+_data = [Vector2(14, 2), 0.0, 0.0, 0, 0, Vector2(50, 16), 0.0, 0.0, 0, 0]
+point_count = 2
 
 [sub_resource type="Curve" id="Curve_sstcd"]
-_limits = [0.0, 8.0, 0.0, 10.0]
-_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(3.39431, 0), 0.039586235, 0.039586235, 0, 0, Vector2(5.351268, 1.434001), 0.0, 0.0, 0, 0, Vector2(10, 8), 1.9007784, 0.0, 0, 0]
-point_count = 4
+_limits = [0.0, 15.0, 14.0, 50.0]
+_data = [Vector2(14, 1), 0.0, 0.0, 0, 0, Vector2(50, 15), 0.0, 0.0, 0, 0]
+point_count = 2
 
 [sub_resource type="Resource" id="Resource_yx4yo"]
 script = ExtResource("8_ae27o")
@@ -327,24 +327,25 @@ cursor_clicks = 60
 metadata/_custom_type_script = "uid://dnl3b8rhvfev0"
 
 [sub_resource type="Curve" id="Curve_2oq4n"]
-_limits = [0.0, 3.0, 0.0, 10.0]
-_data = [Vector2(0, 1.887218), 0.0, 0.0, 0, 0, Vector2(10, 0.22639036), 0.0, 0.0, 0, 0]
+_limits = [0.0, 1.0, 14.0, 50.0]
+_data = [Vector2(14, 0.5), 0.0, 0.0, 0, 0, Vector2(50, 0), 0.0, 0.0, 0, 0]
 point_count = 2
 
 [sub_resource type="Curve" id="Curve_bnteq"]
-_limits = [0.0, 150.0, 0.0, 10.0]
-_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.7204051, 0), 0.0, 0.0, 0, 0, Vector2(10, 97.3031), 0.0, 0.0, 0, 0]
-point_count = 3
+_limits = [0.0, 150.0, 14.0, 50.0]
+_data = [Vector2(14, 30), 0.0, 0.0, 0, 0, Vector2(50, 150), 0.0, 0.0, 0, 0]
+point_count = 2
 
 [sub_resource type="Resource" id="Resource_ae27o"]
 script = ExtResource("1_3uyci")
 scene = ExtResource("9_mytwh")
 cost = 20
+weight = 10
 metadata/_custom_type_script = "uid://cmh85gndtw1k3"
 
 [sub_resource type="Curve" id="Curve_oimyc"]
-_limits = [5.0, 50.0, 0.0, 10.0]
-_data = [Vector2(0, 23.125984), 0.0, 0.0, 0, 0, Vector2(10, 5), 0.0, 0.0, 0, 0]
+_limits = [3.0, 9.0, 14.0, 50.0]
+_data = [Vector2(14, 9), 0.0, 0.0, 0, 0, Vector2(50, 3), 0.0, 0.0, 0, 0]
 point_count = 2
 
 [resource]
