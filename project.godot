@@ -17,7 +17,10 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 config/name="Eternal Tide"
 run/main_scene="uid://dh808cqj70n3l"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="uid://ptd0sa7mmdpi"
+boot_splash/bg_color=Color(0.85490197, 0.68235296, 0.39607844, 1)
+boot_splash/stretch_mode=0
+boot_splash/image="uid://celki0l5d15kw"
+config/icon="uid://celki0l5d15kw"
 
 [audio]
 

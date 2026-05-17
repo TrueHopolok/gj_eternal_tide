@@ -7,6 +7,7 @@ script = ExtResource("1_ymgc8")
 hints = Dictionary[int, String]({
 1: "[color=midnight_blue]Click[/color] the [color=darkred]enemies[/color][br]Do not let them reach your [color=orange]castle[/color]",
 2: "The more you [color=midnight_blue]click[/color][br]The smaller the [color=darkred]attack radius[/color]",
+3: "Try using [color=midnight_blue]Z[/color] and/or [color=midnight_blue]X[/color] instead[br]They will help you a lot[br]When there are too many [color=darkred]enemies[/color]",
 5: "Some [color=darkred]enemies[/color] are [color=green]linked[/color][br]To defeat them, [color=midnight_blue]click[/color][br]On both [color=darkred]enemies[/color] in the [color=green]link[/color]",
 6: "[color=gold]Butterflies[/color] will [color=lime_green]heal[/color] you[br][color=darkred]Do not[/color] [color=midnight_blue]click[/color] on them",
 10: "[color=orange]Links[/color] can be strong, but [color=darkred]onesided[/color][br]Defeat all weaker [color=darkred]enemies[/color][br]Before dealing with strong [color=orange]one[/color]"
