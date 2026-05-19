@@ -20,7 +20,7 @@ config/features=PackedStringArray("4.6", "Forward Plus")
 boot_splash/bg_color=Color(0.85490197, 0.68235296, 0.39607844, 1)
 boot_splash/stretch_mode=0
 boot_splash/image="uid://cgjxfhcb86r06"
-config/icon="uid://celki0l5d15kw"
+config/icon="uid://cgjxfhcb86r06"
 
 [audio]
 
