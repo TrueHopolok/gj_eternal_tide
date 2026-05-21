@@ -8,7 +8,7 @@
 [ext_resource type="Script" uid="uid://dnl3b8rhvfev0" path="res://scenes/game_manager/premade_level.gd" id="6_30l3i"]
 [ext_resource type="PackedScene" uid="uid://d0kpht6wfc0we" path="res://scenes/enemy/advanced/butterfly.tscn" id="6_505gr"]
 [ext_resource type="Script" uid="uid://bdtks2mrdyq3k" path="res://scenes/game_manager/spawn_policy.gd" id="7_vpnt8"]
-[ext_resource type="Script" path="res://scenes/game_manager/enemy_list.gd" id="8_ae27o"]
+[ext_resource type="Script" uid="uid://nvfurqfji7ak" path="res://scenes/game_manager/enemy_list.gd" id="8_ae27o"]
 [ext_resource type="PackedScene" uid="uid://dcnq8vhsh6qdn" path="res://scenes/enemy/advanced/spawner_star.tscn" id="9_mytwh"]
 
 [sub_resource type="Curve" id="Curve_qq5q4"]
