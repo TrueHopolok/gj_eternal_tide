@@ -3,12 +3,15 @@ extends CanvasLayer
 
 
 @export var hints: Dictionary[int, String]
+@export var flags: Dictionary[int, String]
 
 @onready var _label: RichTextLabel = $Hint
 
 
 func on_level_switched(level_num: int) -> void:
 	if level_num in hints.keys():
+		if level_num in flags.keys() and !OS.has_feature(flags[level_num]):
+			return
 		_show_hint(hints[level_num])
 
 
