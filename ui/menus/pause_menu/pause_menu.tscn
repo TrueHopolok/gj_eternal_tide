@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://c00x45sfie3gw" path="res://ui/menus/pause_menu/continue_button.gd" id="3_2gx4h"]
 [ext_resource type="Script" uid="uid://xgtpha4h67hg" path="res://ui/menus/pause_menu/return_button.gd" id="4_cid4m"]
 [ext_resource type="Script" uid="uid://b1k4yojg5i17i" path="res://ui/menus/pause_menu/return_dialog.gd" id="5_yio2i"]
-[ext_resource type="Script" uid="uid://x4dk7xgolyj1" path="res://ui/menus/pause_menu/button.gd" id="6_bom27"]
+[ext_resource type="Script" uid="uid://x4dk7xgolyj1" path="res://ui/menus/pause_menu/toggle_button.gd" id="6_bom27"]
 
 [node name="PauseMenu" type="CanvasLayer" unique_id=840180984]
 process_mode = 3
