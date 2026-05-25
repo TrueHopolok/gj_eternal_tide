@@ -77,6 +77,10 @@ func print_level(level: int) -> void:
 	t.chain().tween_callback(l.queue_free)
 
 
+func is_dead() -> bool:
+	return health <= 0
+
+
 func _update_health_visual() -> void:
 	for i: int in health:
 		flower_path.get_child(i).show()

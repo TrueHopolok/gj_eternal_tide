@@ -34,7 +34,7 @@ func _ready() -> void:
 	if start_at_level != 0:
 		_level_counter = start_at_level - 1
 	else:
-		_level_counter = Persistence.current_level - 1
+		_level_counter = Persistence.current_level - 2
 	add_to_group(GROUP_NAME)
 
 	Persistence.current_score = 0
@@ -109,13 +109,23 @@ func _on_enemy_death(enemy_score: int = 1) -> void:
 func _try_finish_level() -> void:
 	if _active_enemies > 0 or not _event_queue.is_empty():
 		return
-	Persistence.current_level += 1
-	Persistence.submit()
-	_next_level()
+
+	# If the last enemy of the wave kills the castle, execution order of game_over signal and
+	# next level is not obvious and may race.
+	# Because of this, next level is called at the end of the frame.
+	_next_level.call_deferred()
 
 
 func _next_level() -> void:
+	if castle.is_dead():
+		# Do not advance to next level if the last enemy killed us.
+		# Normally this will softlock the game, but since we are dead,
+		# we will be moved to game over scene shortly.
+		return
+
 	_level_counter += 1
+	Persistence.current_level = _level_counter + 1
+	Persistence.submit()
 
 	tutorial.on_level_switched(_level_counter + 1)
 	castle.print_level(_level_counter + 1)

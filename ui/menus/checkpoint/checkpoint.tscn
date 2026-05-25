@@ -56,7 +56,6 @@ theme_override_font_sizes/font_size = 8
 text = "Set to max"
 script = ExtResource("4_jbi6r")
 metadata/_custom_type_script = "uid://2htt7bkeytt7"
-metadata/_edit_lock_ = true
 
 [node name="Level" type="Label" parent="." unique_id=91398127]
 unique_name_in_owner = true
