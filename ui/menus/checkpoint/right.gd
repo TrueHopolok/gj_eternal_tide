@@ -2,6 +2,6 @@ extends BetterButton
 
 
 func _on_press() -> void:
-	var lvl: int = min(int(%Level.text) + 1, Persistence.best_level + 1)
+	var lvl: int = min(int(%Level.text) + 1, Persistence.best_level)
 	%Level.text = str(lvl)
-	Persistence.current_level = lvl - 1
+	Persistence.current_level = lvl

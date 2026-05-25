@@ -2,4 +2,4 @@ extends Label
 
 
 func _ready() -> void:
-	text = "Best level: %d" % (Persistence.best_level + 1)
+	text = "Best level: %d" % Persistence.best_level

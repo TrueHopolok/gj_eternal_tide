@@ -5,7 +5,11 @@ const SAVE_PATH: String = "user://bestscore.bin"
 
 var best_score: int = 0
 var current_score: int = 0
+
+## 1-based level.
 var best_level: int = 0
+
+## 1-based level.
 var current_level: int = 0
 
 
