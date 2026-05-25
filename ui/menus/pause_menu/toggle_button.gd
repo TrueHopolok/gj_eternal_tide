@@ -2,7 +2,7 @@ extends Button
 
 
 func _ready() -> void:
-	visible = OS.has_feature("mobile") || OS.has_feature("web")
+	visible = OS.has_feature("mobile")
 
 
 func _pressed() -> void:
