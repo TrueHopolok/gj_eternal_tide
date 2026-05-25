@@ -18,7 +18,7 @@ const TARGET := Vector2.ZERO
 
 func _ready() -> void:
 	_sprite.play()
-	speed = maxf(speed * 1.0, randfn(speed, speed * 0.25))
+	speed = clampf(randfn(speed, speed * 0.25), speed * 0.5, speed * 2)
 	GameManager.get_instance().register_enemy(self)
 
 
