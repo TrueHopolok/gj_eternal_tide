@@ -39,7 +39,7 @@ func _save() -> void:
 	file.close()
 
 
-## Updates best score if was beaten and saves  into file if it was
+## Updates best score and level if was beaten and saves into file if it was
 func submit() -> void:
 	if current_score > best_score:
 		best_score = current_score
@@ -48,7 +48,7 @@ func submit() -> void:
 	_save()
 
 
-## Resets best score back to 0 both in memory and in file
+## Resets best score and level back to 0 both in memory and in file
 func reset() -> void:
 	best_score = -1
 	current_score = 0

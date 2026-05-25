@@ -63,7 +63,7 @@ size = Vector2i(258, 108)
 borderless = true
 ok_button_text = "    OK    "
 dialog_text = "Return to main menu?
-All current progress would be lost."
+Progress on this level will be lost."
 cancel_button_text = "  Cancel  "
 script = ExtResource("5_yio2i")
 
