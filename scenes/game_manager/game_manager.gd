@@ -110,6 +110,7 @@ func _try_finish_level() -> void:
 	if _active_enemies > 0 or not _event_queue.is_empty():
 		return
 	Persistence.current_level += 1
+	Persistence.submit()
 	_next_level()
 
 
